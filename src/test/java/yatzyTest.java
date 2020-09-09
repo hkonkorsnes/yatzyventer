@@ -24,4 +24,9 @@ public class yatzyTest {
         assertEquals(12, yatzyGame.score(YatzyCategory.PAIR, new int[]{1, 3, 6, 6, 2}));
         assertEquals(8, yatzyGame.score(YatzyCategory.PAIR, new int[]{4, 3, 4, 6, 2}));
     }
+    @Test
+    void shouldScoreThreeOfAKind(){
+        assertEquals(12, yatzyGame.score(YatzyCategory.THREE_OF_A_KIND, new int[]{4, 4, 6, 4, 2}));
+        assertEquals(18, yatzyGame.score(YatzyCategory.THREE_OF_A_KIND, new int[]{4, 6, 6, 4, 6}));
+    }
 }

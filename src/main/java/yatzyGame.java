@@ -9,6 +9,13 @@ public class yatzyGame {
             }
         }
         if(category == YatzyCategory.PAIR){
+            for (int i = 0; i < dice.length; i++) {
+                for (int j = 0; j < dice.length; j++) {
+                    if (i != j && dice[i] == dice[j]) {
+                        return dice[i]*2;
+                    }
+                }
+            }
             return 10;
         }
 

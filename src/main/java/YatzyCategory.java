@@ -1,3 +1,3 @@
 public enum YatzyCategory {
-    ONES
+    TWOS, ONES
 }
